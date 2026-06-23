@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travel World</title>
+<title>Travel Explorer</title>
 
 <style>
 *{
@@ -16,70 +16,80 @@
 header{
     background:#0077b6;
     color:white;
-    padding:15px;
+    padding:15px 50px;
+}
+
+nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
-nav a{
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
     color:white;
     text-decoration:none;
-    margin:0 10px;
 }
 
 .hero{
-    height:80vh;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-    background-size:cover;
-    background-position:center;
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+    center/cover no-repeat;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    color:white;
     text-align:center;
+    color:white;
 }
 
-.hero h2{
-    font-size:50px;
+.content h2{
+    font-size:3rem;
 }
 
-.hero p{
-    font-size:22px;
-    margin:10px 0;
+.content p{
+    margin:15px 0;
+    font-size:1.2rem;
 }
 
 button{
-    padding:12px 25px;
-    background:orange;
+    padding:10px 20px;
     border:none;
-    color:white;
+    background:#ffb703;
     border-radius:5px;
     cursor:pointer;
-    font-size:18px;
 }
 
-.places{
+.destinations{
+    padding:50px;
+    text-align:center;
+}
+
+.cards{
     display:flex;
     justify-content:center;
     gap:20px;
-    padding:40px;
+    margin-top:20px;
     flex-wrap:wrap;
 }
 
 .card{
     width:250px;
-    background:#f4f4f4;
     padding:20px;
+    background:#f4f4f4;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
 }
 
 footer{
-    background:#0077b6;
+    background:#023e8a;
     color:white;
     text-align:center;
     padding:15px;
@@ -90,40 +100,48 @@ footer{
 <body>
 
 <header>
-    <h1>Travel World</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Destinations</a>
-        <a href="#">Packages</a>
-        <a href="#">Contact</a>
+        <h1>Travel Explorer</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
 <section class="hero">
-    <h2>Explore The World</h2>
-    <p>Discover Amazing Places With Us</p>
-    <button>Book Now</button>
+    <div class="content">
+        <h2>Discover Amazing Places</h2>
+        <p>Travel the world and create unforgettable memories.</p>
+        <button>Explore Now</button>
+    </div>
 </section>
 
-<section class="places">
-    <div class="card">
-        <h3>Paris</h3>
-        <p>City of Lights and Romance</p>
-    </div>
+<section class="destinations">
+    <h2>Popular Destinations</h2>
 
-    <div class="card">
-        <h3>Dubai</h3>
-        <p>Luxury and Adventure</p>
-    </div>
+    <div class="cards">
+        <div class="card">
+            <h3>Paris</h3>
+            <p>The City of Lights.</p>
+        </div>
 
-    <div class="card">
-        <h3>Maldives</h3>
-        <p>Beautiful Beaches and Resorts</p>
+        <div class="card">
+            <h3>Bali</h3>
+            <p>Tropical Paradise.</p>
+        </div>
+
+        <div class="card">
+            <h3>Dubai</h3>
+            <p>Luxury and Adventure.</p>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 Travel World. All Rights Reserved.</p>
+    <p>© 2026 Travel Explorer | All Rights Reserved</p>
 </footer>
 
 </body>
